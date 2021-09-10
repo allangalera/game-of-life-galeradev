@@ -1,0 +1,11 @@
+.controls {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

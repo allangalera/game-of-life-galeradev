@@ -1,10 +1,14 @@
 import "./style.css";
 
-const Cell = ({ isAlive, handleCellClick }) => {
+const Cell = ({ x, y }) => {
   return (
     <div
-      className={`cell${isAlive ? " alive" : ""}`}
-      onClick={handleCellClick}
+      id={`${x}#${y}`}
+      className="cell"
+      style={{
+        gridColumnStart: +x + 1,
+        gridRowStart: +y + 1,
+      }}
     />
   );
 };

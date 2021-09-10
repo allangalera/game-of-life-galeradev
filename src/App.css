@@ -4,8 +4,3 @@
   align-items: center;
   gap: 16px;
 }
-
-.controls {
-  display: flex;
-  gap: 8px;
-}
