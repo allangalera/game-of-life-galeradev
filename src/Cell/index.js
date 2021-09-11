@@ -6,8 +6,8 @@ const Cell = ({ x, y }) => {
       id={`${x}#${y}`}
       className="cell"
       style={{
-        gridColumnStart: +x + 1,
-        gridRowStart: +y + 1,
+        gridRowStart: +x + 1,
+        gridColumnStart: +y + 1,
       }}
     />
   );

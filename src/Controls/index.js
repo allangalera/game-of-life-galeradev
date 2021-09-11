@@ -170,6 +170,20 @@ export const Controls = () => {
         />
       </div>
       <div className="input-container">
+        <label>Cell Size</label>
+        <input
+          type="number"
+          onChange={(e) =>
+            setBoardSize({
+              ...boardSize,
+              cellSize: +e.target.value,
+            })
+          }
+          value={boardSize.cellSize}
+          disabled={gameState === "running"}
+        />
+      </div>
+      <div className="input-container">
         <label>Time interval</label>
         <input
           type="number"
